@@ -1,3 +1,21 @@
-#outputLabel {
-  margin: 20px;
+.buttoncontainer {
+  text-align: right;
+}
+
+form {
+  width: 20%;
+}
+
+#output {
+  margin-top: 10px;
+  background-color: #f2f2f2;
+}
+
+.input-group {
+  display: inline-block;
+}
+
+h3 {
+  text-align: center;
+  font-family: monospace;
 }

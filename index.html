@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculator</title>
+    <title>calculator</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
@@ -12,29 +12,31 @@
 
     <div class="container">
 
-      <h1>Calculator</h1>
+
 
       <form id="add">
 
-        <div class="form-group">
-          <label for="add1">1st Number:</label>
-          <input id="add1" class="form-control" type="text">
+        <h3>calculator</h3>
+
+        <div class="input-group">
+          <input id="number1" class="form-control" type="text" placeholder="first #"/>
+          <span class="input-group-addon"></span>
+          <input id="number2" class="form-control" type="text" placeholder="second #"/>
         </div>
 
-        <div class="form-group">
-          <label for="add2">2nd Number:</label>
-          <input id="add2" class="form-control" type="text">
+        <div class="buttoncontainer">
+          <button id="addButton" type="submit" class="btn">+</button>
+          <button id="subtractButton" type="submit" class="btn">-</button>
+          <button id="multiplyButton" type="submit" class="btn">x</button>
+          <button id="divideButton" type="submit" class="btn">/</button>
         </div>
 
-        <button type="submit" class="btn">Add!</button>
 
+
+        <div>
+          <span id="output" class="form-control"></span>
+        </div>
       </form>
-
-      <div>
-        <label for="output" id="outputLabel">Output</label>
-        <span id="output" class="form-control"></span>
-
-      </div>
     </div>
 
   </body>
