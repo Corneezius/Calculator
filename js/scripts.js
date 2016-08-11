@@ -15,6 +15,10 @@ var divide = function(number1, number2) {
   return number1 / number2;
 };
 
+var exponential = function(number1, number) {
+  return number1 ** number;
+};
+
 //UI Logic
 
 $(document).ready(function() {
@@ -33,8 +37,8 @@ $(document).ready(function() {
     else if (operator === "multiplyButton") {
       result = multiply(number1, number2);
     }
-    else {
-      result = divide(number1, number2)
+    else if (operator === "exponentButton") {
+      result = exponential(number1, number2)
     }
     $("#output").text(result);
   });
