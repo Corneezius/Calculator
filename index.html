@@ -11,9 +11,6 @@
   <body>
 
     <div class="container">
-
-
-
       <form id="add">
 
         <h3>calculator</h3>
@@ -24,20 +21,34 @@
           <input id="number2" class="form-control" type="text" placeholder="second #"/>
         </div>
 
-        <div class="buttoncontainer">
-          <button id="addButton" type="submit" class="btn">+</button>
-          <button id="subtractButton" type="submit" class="btn">-</button>
-          <button id="multiplyButton" type="submit" class="btn">x</button>
-          <button id="divideButton" type="submit" class="btn">/</button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="addButton" checked>
+            add
+          </label>
         </div>
-
-
-
-        <div>
-          <span id="output" class="form-control"></span>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="subtractButton">
+            subtract
+          </label>
         </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="multiplyButton">
+            multiply
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="divideButton">
+            divide
+          </label>
+        </div>
+        <button type="submit" class="btn">Go!</button>
       </form>
-    </div>
 
+          <span id="output" class="form-control"></span>
+    </div>
   </body>
 </html>

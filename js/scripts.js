@@ -18,39 +18,24 @@ var divide = function(number1, number2) {
 //UI Logic
 
 $(document).ready(function() {
-  $("#addButton").click(function(event){
+  $("#add").submit(function(event){
     event.preventDefault();
     var number1 = parseInt($("#number1").val());
     var number2 = parseInt($("#number2").val());
-
-    var result = add(number1, number2);
+    var operator = $("input:radio[name=operator]:checked").val();
+    var result;
+    if(operator === "addButton"){
+      result= add(number1, number2);
+    }
+    else if (operator === "subtractButton") {
+      result = subtract(number1, number2);
+    }
+    else if (operator === "multiplyButton") {
+      result = multiply(number1, number2);
+    }
+    else {
+      result = divide(number1, number2)
+    }
     $("#output").text(result);
-  });
-
-  $("#subtractButton").click(function(event){
-    event.preventDefault();
-    var number1 = parseInt($("#number1").val());
-    var number2 = parseInt($("#number2").val());
-
-    var result = subtract(number1, number2);
-    $("#output").text(result);
-  });
-
-  $("#multiplyButton").click(function(event){
-    event.preventDefault();
-    var number1 = parseInt($("#number1").val());
-    var number2 = parseInt($("#number2").val());
-
-    var result = multiply(number1, number2);
-    $("#output").text(result);
-  });
-  $("#divideButton").click(function(event){
-    console.log("divideButton")
-    event.preventDefault();
-    var number1 = parseInt($("#number1").val());
-    var number2 = parseInt($("#number2").val());
-
-    var result = divide(number1, number2);
-    $("#output").text("= " + result);
   });
 });
