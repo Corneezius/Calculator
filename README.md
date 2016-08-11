@@ -2,7 +2,7 @@
 
 #### _Calculator with front end and backend, 08.08.2016_
 
-#### By _**Alexandre Leibler, Kyle Fisher**_
+#### By _**Cornelius Range & Peter Armington**_
 
 ## DESCRIPTION
 _This is a calculator project designed to teach us about javascript_
@@ -30,5 +30,5 @@ _This is a calculator project designed to teach us about javascript_
 
 ### License
 
-Copyright (c) 2016 **_Alex Leibler, Kyle Fisher_**
+Copyright (c) 2016 **_Cornelius Range, Peter Armington_**
 
